@@ -170,8 +170,11 @@ umbriel subscribe workspaces |
 
 `umbriel outputs`, `umbriel color`, `umbriel tearing`, `umbriel layers`, and
 `umbriel keyboard-layouts` print human-readable state. Each accepts `--json`.
+
+## Config commands
 `umbriel config validate` checks a configuration and `umbriel config schema`
 lists the keys it accepts, both without a running compositor.
+`umbriel config-replace <path>` loads and watches an absolute path to a new config file.
 
 ## Virtual outputs
 
