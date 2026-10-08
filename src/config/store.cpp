@@ -247,7 +247,7 @@ namespace umbriel {
       );
     }
     sortDiagnostics();
-    if (outcome == ConfigParseOutcome::Fatal || missing) {
+    if (outcome != ConfigParseOutcome::Loaded) {
       const auto& diags = configDiagnostics();
 
       for (const auto& d : diags) {
